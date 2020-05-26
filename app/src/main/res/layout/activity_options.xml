@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".options">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/btnCiencia"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:onClick="ciencia"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ciencia" />
+
+    <ImageButton
+        android:id="@+id/btnLengua"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:onClick="lengua"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/lengua" />
+
+    <ImageButton
+        android:id="@+id/btnMate"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_weight="1"
+        android:onClick="mate"
+        app:srcCompat="@drawable/mates" />
+</LinearLayout>

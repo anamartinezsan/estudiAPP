@@ -40,13 +40,13 @@ public class QuestionsActivity extends AppCompatActivity {
 
         final TextView score = (TextView)findViewById(R.id.textView4);
         TextView textView=(TextView)findViewById(R.id.DispName);
-        Intent intent = getIntent();
-        String name= intent.getStringExtra("myname");
+       /* Intent intent = getIntent();
+        SttextView.setText("Hello " + name);ring name= intent.getStringExtra("myname");
 
         if (name.trim().equals(""))
             textView.setText("Hello User");
         else
-            textView.setText("Hello " + name);
+            */
 
         submitbutton=(Button) findViewById(R.id.button3);
         quitbutton=(Button)findViewById(R.id.buttonquit);
