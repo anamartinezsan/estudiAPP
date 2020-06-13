@@ -3,108 +3,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:label="Agregar Preguntas"
     tools:context=".DeveloperActivity">
 
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/textView"
+        android:layout_width="377dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Developers"
-        android:id="@+id/textView2"
-        android:layout_marginTop="33dp"
-        android:textSize="40dp"
         android:layout_alignParentTop="true"
-        android:textColor="#000000"
-        android:textAlignment="center"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="false"
-        android:autoText="true"
-        android:layout_alignParentRight="false" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text='Ingresa las preguntas de tu quiz en un formato "Pregunta","Pregunta"'
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preguntas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text='Ingresa las respuestas en orden de tu quiz en un formato "Respuesta","Respuesta"'
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/preguntas"
+        android:layout_width="366dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="20dp"
+        android:background="#EBEBEB"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/respuestas"
+        android:layout_width="366dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="25dp"
+        android:background="#EBEBEB"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
 
     <Button
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back"
-        android:id="@+id/button4"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginBottom="31dp"
         android:background="#01579B"
+        android:text="Back"
         android:textColor="#ffffff" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="84dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignEnd="@+id/button4"
-        android:layout_alignRight="@+id/button4"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="299dp"
-        android:layout_marginRight="299dp"
-        android:src="@drawable/vikas" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_alignEnd="@+id/textView7"
-        android:layout_alignRight="@+id/textView7"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginRight="23dp"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="-116dp"
-        android:layout_marginRight="-116dp"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView7"
-        android:layout_alignStart="@+id/textView7"
-        android:layout_alignLeft="@+id/textView7"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="7dp"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:id="@+id/imageView2"
-        android:src="@drawable/sushant"
-        android:layout_alignTop="@+id/textView7"
-        android:layout_alignParentLeft="true"
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="258dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/button4"
+        android:layout_below="@+id/respuestas"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentTop="false"
-        android:layout_alignWithParentIfMissing="false" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="112dp"
+        android:text="Guardar preguntas" />
 
 </RelativeLayout>

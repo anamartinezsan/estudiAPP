@@ -17,15 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
         Button startbutton=(Button)findViewById(R.id.button);
         Button aboutbutton=(Button)findViewById(R.id.button2);
-        final EditText nametext=(EditText)findViewById(R.id.editName);
+        //final EditText nametext=(EditText)findViewById(R.id.editName);
 
         startbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name=nametext.getText().toString();
+                //String name=nametext.getText().toString();
                 Intent intent=new Intent(getApplicationContext(),options.class);
                 startActivity(intent);
-                intent.putExtra("myname",name);
+                //intent.putExtra("myname",name);
             }
         });
 
