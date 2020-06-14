@@ -50,4 +50,35 @@
         android:textSize="30dp"
         android:visibility="visible" />
 
+    <Button
+        android:id="@+id/btnLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="46dp"
+        android:onClick="onClick"
+        android:text="lock" />
+
+    <Button
+    android:id="@+id/enableBtn"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:text="Enable"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/btnLock"/>
+
+    <Button
+        android:id="@+id/disableBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Disable"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/enableBtn"/>
+
 </RelativeLayout>
