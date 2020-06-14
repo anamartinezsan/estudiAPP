@@ -1,91 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:label="Agregar Preguntas"
+    android:orientation="vertical"
     tools:context=".DeveloperActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="377dp"
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="16dp"
-        android:text='Ingresa las preguntas de tu quiz en un formato "Pregunta","Pregunta"'
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        tools:visibility="visible" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="377dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/preguntas"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:text='Ingresa las respuestas en orden de tu quiz en un formato "Respuesta","Respuesta"'
-        android:textColor="@android:color/background_dark"
-        android:textSize="14sp"
-        tools:visibility="visible" />
+        android:text='Ingresa las preguntas en un formato "Pregunta","Pregunta"'
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/preguntas"
-        android:layout_width="366dp"
-        android:layout_height="55dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="20dp"
-        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="14sp" />
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text='Ingresa las respuestas en un formato "Respuesta","Respuesta"' />
 
     <EditText
         android:id="@+id/respuestas"
-        android:layout_width="366dp"
-        android:layout_height="55dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="25dp"
-        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="14sp" />
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="preguntas"
+        android:text="Guardar Preguntas" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="31dp"
-        android:background="#01579B"
-        android:text="Back"
-        android:textColor="#ffffff" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="258dp"
-        android:layout_height="65dp"
-        android:layout_above="@+id/button4"
-        android:layout_below="@+id/respuestas"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginBottom="112dp"
-        android:text="Guardar preguntas" />
-
-</RelativeLayout>
+        android:onClick="volver"
+        android:text="Volver" />
+</LinearLayout>
